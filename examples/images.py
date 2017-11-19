@@ -47,7 +47,8 @@ while True:
     for sprite in sprites:
         sprite.handle(raycaster, camera)
     
-    display.fill((0, 0, 0))
+    pygame.draw.rect(display, (56, 56, 56), (0, 0, WIDTH, HEIGHT // 2)) # Ceiling
+    pygame.draw.rect(display, (112, 112, 112), (0, HEIGHT // 2, WIDTH, HEIGHT // 2)) # Floor
     raycaster.render(camera)
     
     pygame.display.update()
