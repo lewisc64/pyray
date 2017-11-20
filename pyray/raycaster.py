@@ -171,7 +171,7 @@ class Raycaster:
                         object_z_buffer.append(dist)
                     break
                 
-        for object in object_buffer if len(self.sprites) == 0 else [x for object_z_buffer, x in sorted(zip(object_z_buffer,object_buffer), key=lambda x: x[0])][::-1]:
+        for z, object in sorted(zip(object_z_buffer,object_buffer), key=lambda x: x[0])[::-1]:
             try:
                 if type(object[1]) is pygame.Surface:
                     self.surface.blit(object[1], object[0])
