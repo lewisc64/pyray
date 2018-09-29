@@ -1,4 +1,4 @@
 # pyray
 A raycasting engine for python.
 
-![](http://redmechanic.github.io/images/pyray.png)
+![](https://raw.githubusercontent.com/lewisc64/pyray/master/screenshot.png)
